@@ -1,0 +1,39 @@
+---
+title: "Working with vectors"
+author: "Mallory Giesie"
+date: "8/3/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+marmots <- c("blue","green", 4, "yellow")
+marmots
+class(marmots)
+```
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 8.5)
+##scalar multiplier 
+
+5.2 * pika
+
+```
+```{r}
+bananas <- c(1, 2, 3)
+apples <- c(1, 3, 4)
+
+bananas + apples
+bananas * apples
+6 * bananas
+bananas %*% apples
+```
+
+
